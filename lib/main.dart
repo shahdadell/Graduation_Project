@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: SplashScreen.routeName,
+      initialRoute: SplashScreen.routName,
       routes: {
-        SplashScreen.routeName : (context) => const SplashScreen() ,
-        LoginScreen.routeName : (context) =>  LoginScreen(),
-        RegisterScreen.routeName : (context) =>  RegisterScreen(),
-        HomeScreen.routeName : (context) => const HomeScreen(),
+        SplashScreen.routName : (context) => const SplashScreen() ,
+        LoginScreen.routName : (context) =>  LoginScreen(),
+        RegisterScreen.routName : (context) => RegisterScreen(),
+        HomeScreen.routName : (context) => const HomeScreen(),
       },
     );
   }

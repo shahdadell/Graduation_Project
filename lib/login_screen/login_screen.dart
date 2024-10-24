@@ -7,7 +7,7 @@ class LoginScreen extends StatelessWidget {
   var nameController = TextEditingController();
   var passwordController = TextEditingController();
   var formKey = GlobalKey<FormState>();
-  static const String routeName = "Login";
+  static const String routName = "Login";
 
   @override
   Widget build(BuildContext context) {
@@ -104,16 +104,24 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 50),
-                      GestureDetector(
+                      const Text(
+                        "Don't have an account?",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                      InkWell(
                         onTap: () {
                           Navigator.of(context)
-                              .pushNamed(RegisterScreen.routeName);
+                              .pushNamed(RegisterScreen.routName);
                         },
                         child: const Text(
-                          "Don't have an account? Create Account",
+                          "Create Account",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.w600),
+                              color: Colors.orange,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                       const SizedBox(height: 30),

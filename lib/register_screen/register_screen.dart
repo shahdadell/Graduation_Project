@@ -3,7 +3,7 @@ import '../custom_field/text_filed.dart';
 import '../home_screen/home_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
-  static const String routeName = "RegisterScreen";
+  static const String routName = "RegisterScreen";
   var nameController = TextEditingController();
   var passwordController = TextEditingController();
   var emailController = TextEditingController();
@@ -124,7 +124,7 @@ class RegisterScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(50)
                             )
                         ),
-                        child: const Text("Register",
+                        child: const Text("Sign Up",
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,

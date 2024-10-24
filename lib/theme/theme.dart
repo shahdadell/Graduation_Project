@@ -4,7 +4,10 @@ class MyTheme{
   static Color primaryColor =  Colors.deepOrange ;
   //---------------------------------------------------//
   static ThemeData appTheme = ThemeData(
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
+      iconTheme: IconThemeData(
+        color: Colors.black
+      ),
       color: Colors.transparent,
       elevation: 0,
       centerTitle: true,
